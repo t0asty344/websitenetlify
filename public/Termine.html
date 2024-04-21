@@ -39,9 +39,17 @@
             // Function to send email when the button is clicked
             async function sendEmail() {
                 try {
+                    const vorname = document.getElementById('messageInput').value;
+                    const Name = document.getElementById('messageInput').value;
+                    const email_ad = document.getElementById('messageInput').value;
+                    const message = document.getElementById('messageInput').value;
                     // Send a request to the serverless function
                     const response = await fetch('/api/mail', {
-                        method: 'POST'
+                        method: 'POST',
+                        headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ vorname,Name,email_ad, message }) // Include recipient and message in the request body
                     });
     
                     // Check if the request was successful

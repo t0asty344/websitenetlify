@@ -2,6 +2,7 @@ const nodemailer = require('nodemailer');
 
 
 module.exports = async (req, res) => {
+  const { vorname,Name,email_ad, message } = req.body;
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -10,17 +11,14 @@ var transporter = nodemailer.createTransport({
   }
 });
 
-var Vorname=document.getElementById("vorname").value
-var Nachname=document.getElementById("nachname").value
-var Email_user=document.getElementById("email").value
-var Nachricht=document.getElementById("Nachricht").value
+
 
 
 var mailOptions = {
   from: 'toastytester1@gmail.com',
   to: 'toasty344@gmail.com',
   subject: 'Neuer Termin',
-  text: "Vorname"+Vorname+"Nachname"+Nachname+"Email"+Email_user+'Nachricht'+Nachricht,
+  text: "Vorname: ${vorname} Nachname: ${Name} Email: ${email_ad} Nachricht:${message}",
 };
 
 
