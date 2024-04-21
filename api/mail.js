@@ -10,11 +10,17 @@ var transporter = nodemailer.createTransport({
   }
 });
 
+var Vorname=document.getElementById("vorname").value
+var Nachname=document.getElementById("nachname").value
+var Email_user=document.getElementById("email").value
+var Nachricht=document.getElementById("Nachricht").value
+
+
 var mailOptions = {
   from: 'toastytester1@gmail.com',
   to: 'toasty344@gmail.com',
-  subject: 'Sending Email using Node.js',
-  text: 'That was easy!'
+  subject: 'Neuer Termin',
+  text: "Vorname"+Vorname+"Nachname"+Nachname+"Email"+Email_user+'Nachricht'+Nachricht,
 };
 
 
