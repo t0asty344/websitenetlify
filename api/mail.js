@@ -18,7 +18,7 @@ var mailOptions = {
   from: 'toastytester1@gmail.com',
   to: 'toasty344@gmail.com',
   subject: 'Neuer Termin',
-  text: "Vorname: ${vorname} Nachname: ${Name} Email: ${email_ad} Nachricht:${message}",
+  text: "Vorname: "+ vorname+ "Nachname: "+ Name+ "Email: "+ email_ad+"Nachricht:${message}",
 };
 
 
