@@ -110,6 +110,7 @@ font-size: 30px;
     font-size: 25px;
 }
 .Honorar_div{
+    margin-top: 50px;
     text-align: center;
     color:#F5D423;
 }
@@ -231,14 +232,14 @@ body#Impressum_body{
 
 }
 .Impressum_Text{
-    text-align: center;
+    text-align: rgb(255, 196, 3);
     font-size: 30px;
     margin-left:30%;
     margin-right:30% ;
 }
 /*Für Datenschutz*/
 body#Datenschutz_body{
-    background-color: lightblue;
+    background-color: rgb(255, 196, 3);
 
 }
 .Datenschutz_text{
