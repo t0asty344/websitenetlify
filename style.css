@@ -1,0 +1,184 @@
+body{
+    background-color: gray ;
+    margin: 0px;
+}
+h2{margin-top: 0px;}
+h1{margin-top: 0px;}
+p{margin: 0px;}
+.body_wel{
+    background-image: url("images/flower_yellow.png");
+    width: 100%;
+    height: 100%;
+}
+.body_about{
+    width: 100%;
+    height: 100vh;
+    
+}
+.div_wel{
+color: orange;
+
+}
+.div_contact{
+    margin-top: 100px;
+    text-align: center;
+}
+.h1_wel{
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+    gap:30px;
+}
+.wel_h12{
+    margin-top: 30px;
+}
+.pic{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.pic_logo{
+    width: 350px;
+    height: 150px;
+}
+.pic_logo1{
+    width: 250px;
+    height: 100px;
+}
+.index_div{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.index_name{
+margin-top: 30px;
+font-size: 30px;
+}
+.index_text{
+    margin-top: 60px;
+    margin-right: 30px;
+    margin-left: 30px;
+ font-size: 80px;
+}
+.index_name2{
+    margin-top: 0px;
+ font-size: 30px;
+}
+.index_name3{
+    margin-top:70px;
+    font-size: 60px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.center_con{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.about_div{
+    text-align: center;
+    color:white;
+}
+.about_div_list{
+ color:white;
+}
+.about_div_list_head{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+}
+.about_text{
+    color: white;
+    font-size: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.about_heads{
+    margin-top: 60px;
+    font-size: 25px;
+}
+.about_heads1{
+    padding-top:30px ;
+    font-size: 25px;
+}
+.Honorar_div{
+    text-align: center;
+    color:#F5D423;
+}
+.name_con{
+    font-size: 90px;
+    margin-top: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+.con_text{
+    margin-top: 100px;
+    font-size: 30px;
+    margin-bottom: 100px;
+    line-height: 30px;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.con_bot{
+    font-size: 40px;
+}
+.mayatext{
+    margin-top: 0px;
+}
+.well_text{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.wel_text1{
+    text-align: center;
+    font-size: 40px;
+}
+.wel_text2{
+    margin-top: 20px;
+    font-size: 40px;
+}
+.wel_text3{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+.Honorar_div{
+    padding-top: 30px;
+    font-size: 30px;
+}
+.hon_text2{
+margin-left: 20%;
+margin-right: 20%;
+}
+.ptext{
+    margin-top: 30px;
+}
+/*Header*/
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    height: 100px;
+    
+}
+.headertext{
+display: flex;
+align-items: center;   
+color: white;
+width: 20%;
+}
+.headerbuttons{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 80%;
+}
+/*Für Termine*/
+
