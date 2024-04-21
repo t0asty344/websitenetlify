@@ -83,6 +83,7 @@ font-size: 30px;
     padding-top: 30px;
 }
 .about_div{
+    padding-top: 70px;
     text-align: center;
     color:white;
 }
@@ -195,10 +196,54 @@ font-size: 20px;
 }
 
 /*Für Termine*/
-
+.Termine_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 10px;
+    
+}
+.Termine_uber{
+    font-size: 40px;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.Termine_tf{
+ height: 30px;
+}
+.Termine_nachrichten{
+    width: 200px;
+    height: 100px;
+    margin-bottom: 4px;
+}
 /*Für Impressum*/
 body#Impressum_body{
     background-color: lightblue;
 
 }
+.Impressum_Text{
+    text-align: center;
+    font-size: 30px;
+    margin-left:30%;
+    margin-right:30% ;
+}
+/*Für Datenschutz*/
+body#Datenschutz_body{
+    background-color: lightblue;
 
+}
+.Datenschutz_text{
+    text-align: center;
+    font-size: 30px;
+    margin-left:30%;
+    margin-right:30% ;
+} 
