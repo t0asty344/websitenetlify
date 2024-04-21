@@ -228,11 +228,11 @@ font-size: 20px;
 }
 /*Für Impressum*/
 body#Impressum_body{
-    background-color: lightblue;
+    background-color: rgb(255, 196, 3);
 
 }
 .Impressum_Text{
-    text-align: rgb(255, 196, 3);
+    text-align: center;
     font-size: 30px;
     margin-left:30%;
     margin-right:30% ;
