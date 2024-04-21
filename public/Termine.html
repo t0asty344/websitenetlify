@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="header">
+        <div class="headertext">
+            <p>Natali holland</p>
+        </div>
+        <div class="headerbuttons">
+            
+            <button class="headerbutton" onclick="window.location.href='index.html'">Home</button>
+            <button class="headerbutton" onclick="window.location.href='Welcome.html'">Welcome</button>
+            <button class="headerbutton" onclick="window.location.href='About.html'">About</button>
+            <button class="headerbutton" onclick="window.location.href='Honorar.html'">Honorar</button>
+            <button class="headerbutton" onclick="window.location.href='Termine.html'">Termine</button>
+            <button class="headerbutton" onclick="window.location.href='Contact.html'">Contact</button>
+            <button class="headerbutton" onclick="window.location.href='Impressum.html'">Impressum</button>
+        </div>
+    </div>
+    <img src="images/bird.png" alt="bird" class="pic">
+    <div>
+        <h1>Name</h1>
+        <input>
+        <h1>Nachname</h1>
+        <input>
+        <h1>Password</h1>
+        <input>
+        <h1>Nachricht</h1>
+        <textarea></textarea>
+        <div>
+        <button id="sendEmailButton">Send Email</button>
+        <script>
+            // Function to send email when the button is clicked
+            async function sendEmail() {
+                try {
+                    // Send a request to the serverless function
+                    const response = await fetch('/api/mail', {
+                        method: 'POST'
+                    });
+    
+                    // Check if the request was successful
+                    if (response.ok) {
+                        alert('Email sent successfully!');
+                    } else {
+                        alert('Failed to send email.');
+                    }
+                } catch (error) {
+                    console.error('Error sending email:', error);
+                    alert('An error occurred while sending the email.');
+                }
+            }
+    
+            // Attach click event listener to the button
+            document.getElementById('sendEmailButton').addEventListener('click', sendEmail);
+        </script>
+    </div>
+</body>
+</html>

@@ -162,7 +162,8 @@ margin-right: 20%;
 }
 /*Header*/
 .header{
-    position: fixed;
+    display: flex;
+    
     width: 100%;
     background-color: black;
     height: 100px;
@@ -173,12 +174,31 @@ display: flex;
 align-items: center;   
 color: white;
 width: 20%;
+margin-left: 50px;
+font-size: 20px;
 }
 .headerbuttons{
     display: flex;
     justify-content: right;
     align-items: center;
-    width: 80%;
+    width: 60%;
 }
+.headerbutton{
+    width: 100%;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.headerbutton:hover{
+    background-color: white;
+    color:black;
+}
+
 /*Für Termine*/
+
+/*Für Impressum*/
+body#Impressum_body{
+    background-color: lightblue;
+
+}
 
