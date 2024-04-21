@@ -11,17 +11,12 @@ var transporter = nodemailer.createTransport({
   }
 });
 
-
-
-
 var mailOptions = {
   from: 'toastytester1@gmail.com',
   to: 'toasty344@gmail.com',
   subject: 'Neuer Termin',
-  text: "Vorname: "+ vorname+ "Nachname: "+ Name+ "Email: "+ email_ad+"Nachricht:${message}",
+  text: "Vorname: "+ vorname+"\n"+"Nachname: "+ Name+"\n"+ "Email: "+ email_ad+"\n"+"Nachricht:"+message,
 };
-
-
 
 try {
   // Send the email
