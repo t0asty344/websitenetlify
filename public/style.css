@@ -248,3 +248,30 @@ body#Datenschutz_body{
     margin-left:30%;
     margin-right:30% ;
 } 
+/*Für Datenschutz*/
+.Veranstaltungen_div{
+    display: flex
+}
+.Veranstaltungen_bilder{
+    margin-top: 10px;
+
+}
+.bilder_Veranstaltungen{
+    width: 700px;
+    height: 700px;
+}
+.Veranstaltungen_div_email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left:  49%;
+    border-radius: 10px;
+}
