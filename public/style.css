@@ -5,34 +5,54 @@ body{
 h2{margin-top: 0px;}
 h1{margin-top: 0px;}
 p{margin: 0px;}
-.body_wel{
-    background-image: url("images/flower_yellow.png");
-    width: 100%;
-    height: 100%;
-}
+
 .body_about{
     width: 100%;
     height: 100vh;
     
 }
-.div_wel{
-color: orange;
 
-}
 .div_contact{
     margin-top: 100px;
     text-align: center;
 }
-.h1_wel{
-    font-size: 30px;
-    text-align: center;
-    width: 100%;
-    padding-top: 30px;
-    gap:30px;
+/*bodys*/
+.body_text_index{
+    position: relative;
 }
-.wel_h12{
-    margin-top: 30px;
+.body_text_welcome{
+    position: relative;
+    height: 1000px;
 }
+.body_text_about{
+    position: relative;
+    height: auto;
+}
+.body_text_honorar{
+    position: relative;
+    height: auto;
+}
+.body_text_termine{
+    position: relative;
+    height: 850px;
+}
+.body_text_veranstaltungen{
+    position: relative;
+    height: 850px;
+}
+.body_text_contact{
+    position: relative;
+    height: 850px;
+}
+.body_text_impressum{
+    position: relative;
+    height: auto;
+}
+.body_text_datenshutz{
+    position: relative;
+    height: auto;
+}
+/*Images*/
 .pic{
     position: absolute;
     width: 100%;
@@ -47,31 +67,12 @@ color: orange;
     width: 250px;
     height: 100px;
 }
-.index_div{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.copyright_image{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
 
-}
-.index_name{
-margin-top: 30px;
-font-size: 30px;
-}
-.index_text{
-    margin-top: 60px;
-    margin-right: 30px;
-    margin-left: 30px;
- font-size: 80px;
-}
-.index_name2{
-    margin-top: 0px;
- font-size: 30px;
-}
-.index_name3{
-    margin-top:70px;
-    font-size: 60px;
-}
 .center{
     display: flex;
     justify-content: center;
@@ -82,83 +83,10 @@ font-size: 30px;
     justify-content: center;
     padding-top: 30px;
 }
-.about_div{
-    padding-top: 70px;
-    text-align: center;
-    color:white;
-}
-.about_div_list{
- color:white;
-}
-.about_div_list_head{
-    text-align: center;
-    margin-top: 50px;
-    font-size: 25px;
-}
-.about_text{
-    color: white;
-    font-size: 30px;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-.about_heads{
-    margin-top: 60px;
-    font-size: 25px;
-}
-.about_heads1{
-    padding-top:30px ;
-    font-size: 25px;
-}
-.Honorar_div{
-    margin-top: 50px;
-    text-align: center;
-    color:#F5D423;
-}
-.name_con{
-    font-size: 90px;
-    margin-top: 150px;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 3px;
-}
-.con_text{
-    margin-top: 100px;
-    font-size: 30px;
-    margin-bottom: 100px;
-    line-height: 30px;
-    font-style: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.con_bot{
-    font-size: 40px;
-}
 .mayatext{
     margin-top: 0px;
 }
-.well_text{
-    margin-right: 10%;
-    margin-left: 10%;
-}
-.wel_text1{
-    text-align: center;
-    font-size: 40px;
-}
-.wel_text2{
-    margin-top: 20px;
-    font-size: 40px;
-}
-.wel_text3{
-    margin-top: 30px;
-    text-align: center;
-    font-size: 40px;
-}
-.Honorar_div{
-    padding-top: 30px;
-    font-size: 30px;
-}
-.hon_text2{
-margin-left: 20%;
-margin-right: 20%;
-}
+
 .ptext{
     margin-top: 30px;
 }
@@ -195,6 +123,127 @@ font-size: 20px;
     background-color: white;
     color:black;
 }
+/*index*/
+.body_text_index{
+    position: relative;
+}
+.index_div{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.index_name{
+margin-top: 30px;
+font-size: 30px;
+}
+.index_text{
+    margin-top: 60px;
+    margin-right: 30px;
+    margin-left: 30px;
+ font-size: 80px;
+}
+.index_name2{
+    margin-top: 0px;
+ font-size: 30px;
+}
+.index_name3{
+    margin-top:70px;
+    font-size: 60px;
+}
+/*Welcome*/
+.well_text{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.wel_text1{
+    text-align: center;
+    font-size: 40px;
+}
+.wel_text2{
+    margin-top: 20px;
+    font-size: 40px;
+}
+.wel_text3{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+.h1_wel{
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+    gap:30px;
+}
+.wel_h12{
+    margin-top: 30px;
+}
+.div_wel{
+    color: orange;
+    }
+/*About*/
+.about_div{
+    padding-top: 70px;
+    text-align: center;
+    color:white;
+}
+.about_div_list{
+ color:white;
+}
+.about_div_list_head{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+}
+.about_text{
+    color: white;
+    font-size: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.about_heads{
+    margin-top: 60px;
+    font-size: 25px;
+}
+.about_heads1{
+    padding-top:30px ;
+    font-size: 25px;
+}
+/*Honorar*/
+.Honorar_div{
+    padding-top: 30px;
+    font-size: 30px;
+}
+.hon_text2{
+margin-left: 20%;
+margin-right: 20%;
+}
+.Honorar_div{
+    
+    text-align: center;
+    color:#F5D423;
+}
+/*Buttons*/
+/*Contact*/
+.name_con{
+    font-size: 90px;
+    margin-top: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+.con_text{
+    margin-top: 100px;
+    font-size: 30px;
+    margin-bottom: 100px;
+    line-height: 30px;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.con_bot{
+    font-size: 40px;
+}
 
 /*Für Termine*/
 .Termine_div{
@@ -202,7 +251,7 @@ font-size: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: left;
@@ -211,6 +260,9 @@ font-size: 20px;
     margin-right: 40%;
     border-radius: 10px;
     
+}
+.Termine_div_div{
+    padding-top: 100px;
 }
 .Termine_uber{
     font-size: 40px;
@@ -225,6 +277,11 @@ font-size: 20px;
     width: 200px;
     height: 100px;
     margin-bottom: 4px;
+}
+
+/*body_section*/
+.body_section{
+    height: 80%;
 }
 /*Für Impressum*/
 body#Impressum_body{
@@ -248,7 +305,7 @@ body#Datenschutz_body{
     margin-left:30%;
     margin-right:30% ;
 } 
-/*Für Datenschutz*/
+/*Veranstaltungen*/
 .Veranstaltungen_div{
     display: flex
 }
@@ -274,4 +331,512 @@ body#Datenschutz_body{
     background-color: rgba(0, 0, 0, 0.8);
     margin-left:  49%;
     border-radius: 10px;
+}
+/*Footer*/
+.footer{
+    position: static;
+}
+.footer_section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:  row;
+    background-color: black;
+
+    height: 60px;
+    width: 100%;
+}
+.Copyright_p{
+    color: white;
+}
+.footer_copyright{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+}
+.footer_buttons{
+    display: flex;
+    flex-direction: row;
+}
+/*mobile_dd_menu*/
+.mbl_dropdown_menu{
+    display: none;
+}
+@media (max-width:480px)
+{
+    body
+    {
+        background-color: lightblue;
+    }
+    
+    body#Datenschutz_body
+    {
+        background-color: lightblue;
+    }
+    body#Impressum_body
+    {
+        background-color: lightblue;
+    }
+    /*bodys*/
+.body_text_index{
+    position: relative;
+    height: 800px;
+}
+.body_text_welcome{
+    position: relative;
+    height: 1650px;
+}
+.body_text_about{
+    position: relative;
+    height: 1650px;
+}
+.body_text_honorar{
+    position: relative;
+    height: 1300px;
+}
+.body_text_termine{
+    position: relative;
+    height: 850px;
+}
+.body_text_veranstaltungen{
+    position: relative;
+    height: 1000px;
+}
+.body_text_contact{
+    position: relative;
+    height: 650px;
+}
+.body_text_impressum{
+    position: relative;
+    height: auto;
+
+}
+.body_text_datenshutz{
+    position: relative;
+    height: auto;
+}
+    /*Header*/
+    .header{
+        display: flex;
+        width: 100%;
+        background-color: black;
+        justify-content: space-between;
+        height: 100px;
+        
+    }
+    .headertext{
+    display: flex;
+    align-items: center;   
+    color: white;
+    width: 40%;
+    flex-direction: row;
+    margin-left: 20px;
+    font-size: 20px;
+    }
+    .headerbuttons{
+        display: none;
+        justify-content: right;
+        align-items: center;
+        width: 40%;
+    }
+
+    /*mobile_dd_menu*/
+    .mbl_dropdown_menu{
+        display: block;
+        padding-top: 30px;
+        padding-right: 10px;
+    }
+
+    /*fonts*/
+    /*index*/
+    .index_name{
+    margin-top: 30px;
+    font-size: 1em;
+    }
+    .index_text{
+        margin-top: 60px;
+        margin-right: 30px;
+        margin-left: 30px;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    .index_name2{
+        margin-top: 0px;
+        font-size: 1em;
+    }
+    .index_name3{
+        margin-top:70px;
+        font-size: 1em;
+    }
+    .body_text_contact{
+        position: relative;
+        height: auto;
+    }
+    /*Welcome*/
+.well_text{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.wel_text1{
+    text-align: center;
+    font-size: 1.5em;
+}
+.wel_text2{
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+.wel_text3{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.h1_wel{
+    font-size:1.5em;
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+    gap:30px;
+}
+.wel_h12{
+    margin-top: 30px;
+}
+.div_wel{
+    color: orange;
+    }
+/*About*/
+.about_div{
+    padding-top: 70px;
+    text-align: center;
+    color:white;
+}
+.about_div_list{
+ color:white;
+}
+.about_div_list_head{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.25em;
+}
+.about_text{
+    color: white;
+    font-size: 1.25em;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.about_heads{
+    margin-top: 60px;
+    font-size: 1.25em;
+}
+.about_heads1{
+    padding-top:30px ;
+    font-size: 1.25em;
+}
+/*Honorar*/
+.Honorar_div{
+    padding-top: 30px;
+    font-size: 1.25em;
+}
+.hon_text{
+    
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.hon_text2{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.Honorar_div{
+    
+    text-align: center;
+    color:#F5D423;
+}
+/*Buttons*/
+/*Contact*/
+.name_con{
+    font-size: 90px;
+    margin-top: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+.con_text{
+    margin-top: 100px;
+    font-size: 30px;
+    margin-bottom: 100px;
+    line-height: 30px;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.con_bot{
+    font-size: 40px;
+}
+
+/*Für Termine*/
+.Termine_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 10px;
+    
+}
+.Termine_div_div{
+    padding-top: 100px;
+}
+.Termine_uber{
+    font-size: 40px;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.Termine_tf{
+ height: 30px;
+}
+.Termine_nachrichten{
+    width: 200px;
+    height: 100px;
+    margin-bottom: 4px;
+}
+
+/*body_section*/
+.body_section{
+    height: 80%;
+}
+/*Für Impressum*/
+body#Impressum_body{
+    background-color: rgb(143, 70, 3);
+
+}
+.Impressum_Text{
+    text-align: center;
+    font-size: 1em;
+    margin-left:30%;
+    margin-right:30% ;
+}
+/*Für Datenschutz*/
+body#Datenschutz_body{
+    background-color: rgb(143, 70, 3);
+
+}
+.Datenschutz_text{
+    text-align: center;
+    font-size: 1em;
+    margin-left:30%;
+    margin-right:30% ;
+} 
+/*Veranstaltungen*/
+.Veranstaltungen_div{
+    display: block
+}
+.Veranstaltungen_bilder{
+    margin-top: 10px;
+
+}
+.bilder_Veranstaltungen{
+    width: 400px;
+    height: 400px;
+}
+.Veranstaltungen_div_email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+}
+/*Footer*/
+.footer{
+    position: static;
+}
+.footer_section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:  row;
+    background-color: black;
+
+    height: 60px;
+    width: 100%;
+}
+.Copyright_p{
+    color: white;
+}
+.footer_copyright{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+}
+.footer_buttons{
+    display: flex;
+    flex-direction: row;
+}
+/*Images*/
+.pic{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.pic_logo{
+    width: 350px;
+    height: 150px;
+}
+.pic_logo1{
+    width: 250px;
+    height: 100px;
+}
+.copyright_image{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.center_con{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.mayatext{
+    margin-top: 0px;
+}
+
+.ptext{
+    margin-top: 30px;
+}
+}
+@media (min-width:481px) and (max-width:1200px)
+{
+    body
+    {
+        background-color: lightblue;
+    }
+    
+    body#Datenschutz_body
+    {
+        background-color: lightblue;
+    }
+    body#Impressum_body
+    {
+        background-color: lightblue;
+    }
+    /*fonts*/
+    .body_text_contact{
+        position: relative;
+        height: auto;
+    }
+    .mbl_dropdown_menu{
+        display: block;
+        padding-top: 30px;
+        padding-right: 10px;
+    }
+    .headerbuttons{
+        display: none;
+        justify-content: right;
+        align-items: center;
+        width: 40%;
+    }
+
+    .Termine_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin-left: 20%;
+        margin-right: 20%;
+        border-radius: 10px;
+        
+    }
+}
+@media (min-width:1201px) and (max-width:1600px)
+{
+    body
+    {
+        background-color: lightblue;
+    }
+    
+    body#Datenschutz_body
+    {
+        background-color: lightblue;
+    }
+    body#Impressum_body
+    {
+        background-color: lightblue;
+    }
+    /*fonts*/
+    .Termine_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin-left: 1em;
+        margin-right: 1em;
+        border-radius: 10px;
+        
+    }
+
+}
+@media (min-width:1601px) 
+{
+    body
+    {
+        background-color: lightblue;
+    }
+    body#Datenschutz_body
+    {
+        background-color: lightblue;
+    }
+    body#Impressum_body
+    {
+        background-color: lightblue;
+    }
+    /*fonts*/
+    .Termine_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin-left: 20%;
+        margin-right: 20%;
+        border-radius: 10px;
+        
+    }
+
 }

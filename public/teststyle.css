@@ -1,0 +1,158 @@
+body {
+    background-color: gray;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, p {
+    margin-top: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    height: 100px;
+    padding: 0 20px;
+    color: white;
+}
+
+.headertext {
+    font-size: 20px;
+}
+
+.headerbuttons {
+    display: flex;
+    gap: 10px;
+}
+
+.headerbutton {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.headerbutton:hover {
+    background-color: white;
+    color: black;
+}
+
+.mbl_dropdown_menu {
+    display: none;
+}
+
+.body_text_welcome {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.pic {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.div_wel {
+    color: orange;
+}
+
+.h1_wel {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.wel_text1, .wel_text2, .wel_text3 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.footer_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+.copyright_image {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .headertext {
+        width: 100%;
+    }
+
+    .headerbuttons {
+        display: none;
+    }
+
+    .mbl_dropdown_menu {
+        display: block;
+        width: 100%;
+        text-align: right;
+    }
+
+    .h1_wel {
+        font-size: 1.5rem;
+    }
+
+    .wel_text1, .wel_text2, .wel_text3 {
+        font-size: 1rem;
+    }
+
+    .footer_section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    .h1_wel {
+        font-size: 1.75rem;
+    }
+
+    .wel_text1, .wel_text2, .wel_text3 {
+        font-size: 1.1rem;
+    }
+
+    .footer_section {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .h1_wel {
+        font-size: 2rem;
+    }
+
+    .wel_text1, .wel_text2, .wel_text3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1601px) {
+    .h1_wel {
+        font-size: 2.5rem;
+    }
+
+    .wel_text1, .wel_text2, .wel_text3 {
+        font-size: 1.5rem;
+    }
+}

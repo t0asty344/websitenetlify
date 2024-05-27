@@ -4,27 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Contact</title>
 </head>
 <body>
-    <div class="header">
-        <div class="headertext">
-            <p>Natali Holland</p>
-        </div>
-        <div class="headerbuttons">
-            
-            <button class="headerbutton" onclick="window.location.href='index.html'">Home</button>
-            <button class="headerbutton" onclick="window.location.href='Welcome.html'">Welcome</button>
-            <button class="headerbutton" onclick="window.location.href='About.html'">About</button>
-            <button class="headerbutton" onclick="window.location.href='Honorar.html'">Honorar</button>
-            <button class="headerbutton" onclick="window.location.href='Termine.html'">Termine</button>
-            <button class="headerbutton" onclick="window.location.href='Veranstaltungen.html'">Veranstaltungen</button>
-            <button class="headerbutton" onclick="window.location.href='Contact.html'">Contact</button>
-            <button class="headerbutton" onclick="window.location.href='Impressum.html'">Impressum</button>
-            <button class="headerbutton" onclick="window.location.href='Datenschutz.html'">Datenschutz</button>
-        </div>
-    </div>
     <section>
+        <div class="header">
+            <div class="headertext">
+                <p>Natali Holland</p>
+            </div>
+            <div class="headerbuttons">
+                <button class="headerbutton" onclick="window.location.href='index.html'">Home</button>
+                <button class="headerbutton" onclick="window.location.href='Welcome.html'">Welcome</button>
+                <button class="headerbutton" onclick="window.location.href='About.html'">About</button>
+                <button class="headerbutton" onclick="window.location.href='Honorar.html'">Honorar</button>
+                <button class="headerbutton" onclick="window.location.href='Termine.html'">Termine</button>
+                <button class="headerbutton" onclick="window.location.href='Veranstaltungen.html'">Veranstaltungen</button>
+                <button class="headerbutton" onclick="window.location.href='Contact.html'">Contact</button>
+            </div>
+            <div class="mbl_dropdown_menu">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Options
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html">Home</a></li>
+                        <li><a class="dropdown-item" href="Welcome.html">Welcome</a></li>
+                        <li><a class="dropdown-item" href="About.html">About</a></li>
+                        <li><a class="dropdown-item" href="Honorar.html">Honorar</a></li>
+                        <li><a class="dropdown-item" href="Termine.html">Termine</a></li>
+                        <li><a class="dropdown-item" href="Veranstaltungen.html">Veranstaltungen</a></li>
+                        <li><a class="dropdown-item" href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="body_text_contact">
         <img src="images/bird.png" alt="corn" class="pic">
         <div class="center_con">
             <img src="images/logo-no-background.png" alt="logo" class="pic_logo">
@@ -42,6 +59,18 @@
                 <p>
                     Haager Straße 13, 84405 Dorfen
                 </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="footer_section">
+            <div class="footer_copyright">
+                <img src="images/copyright_image-removebg.png" class="copyright_image">
+                <p class="Copyright_p">Natali Holland</p>
+            </div>
+            <div class="footer_buttons">
+                <button class="headerbutton" onclick="window.location.href='Impressum.html'">Impressum</button>
+                <button class="headerbutton" onclick="window.location.href='Datenschutz.html'">Datenschutz</button>
             </div>
         </div>
     </section>
