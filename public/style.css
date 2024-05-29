@@ -22,15 +22,18 @@ p{margin: 0px;}
 }
 .body_text_welcome{
     position: relative;
-    height: 1000px;
+    margin:0px;
+    padding:0px;
+    margin-bottom: -20px;
+    
 }
 .body_text_about{
     position: relative;
-    height: auto;
+    margin-bottom: -20px;
 }
 .body_text_honorar{
     position: relative;
-    height: auto;
+    margin-bottom: -20px;
 }
 .body_text_termine{
     position: relative;
@@ -51,6 +54,10 @@ p{margin: 0px;}
 .body_text_datenshutz{
     position: relative;
     height: auto;
+}
+.body_text_kalender{
+    height: 850px;
+    background-color: lightblue;
 }
 /*Images*/
 .pic{
@@ -342,7 +349,7 @@ body#Datenschutz_body{
     flex-direction:  row;
     background-color: black;
 
-    height: 60px;
+    height: 80px;
     width: 100%;
 }
 .Copyright_p{
@@ -357,17 +364,45 @@ body#Datenschutz_body{
     
 }
 .footer_buttons{
-    display: flex;
+    display:flex;
     flex-direction: row;
+    margin-right: 20px;
 }
 /*mobile_dd_menu*/
 .mbl_dropdown_menu{
     display: none;
 }
-@media (max-width:480px)
+/*Kalender*/
+.kalender_div{
+    display: grid;
+    
+    justify-content: center;
+    
+    grid-template-columns: repeat(7,100px) ;
+    grid-template-rows: repeat(6,100px);
+}     
+.full_kalender{
+    display: grid;
+    grid-template-columns: 23% 54% 23%;
+    grid-template-rows: auto;
+    
+    
+}
+.kalender_button{
+    justify-self:center;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+
+}
+@media (max-width:600px)
 {
+    html{
+        height: 100%;
+    }
     body
     {
+        height: 100%;
         background-color: lightblue;
     }
     
@@ -386,15 +421,16 @@ body#Datenschutz_body{
 }
 .body_text_welcome{
     position: relative;
-    height: 1750px;
+    margin-bottom: -20px;
+    
 }
 .body_text_about{
     position: relative;
-    height: 1800px;
+    margin-bottom: -20px;
 }
 .body_text_honorar{
     position: relative;
-    height: 1500px;
+    margin-bottom: -20px;
 }
 .body_text_termine{
     position: relative;
@@ -491,6 +527,7 @@ body#Datenschutz_body{
     margin-top: 30px;
     text-align: center;
     font-size: 1.5em;
+    
 }
 .h1_wel{
     font-size:1.5em;
@@ -688,6 +725,16 @@ body#Datenschutz_body{
     display: flex;
     flex-direction: row;
 }
+/*footer*/
+.footer_section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:  column;
+    background-color: black;
+
+    height: 80px;
+    width: 100%;
+}
 /*Images*/
 .pic{
     position: absolute;
@@ -727,8 +774,45 @@ body#Datenschutz_body{
     margin-top: 30px;
 }
 }
-@media (min-width:481px) and (max-width:1200px)
+@media (min-width:601px) and (max-width:1000px)
 {
+    .body_text_index{
+        position: relative;
+        height: auto;
+    }
+    .body_text_welcome{
+        position: relative;
+        height: auto;
+    }
+    .body_text_about{
+        position: relative;
+        height: auto;
+    }
+    .body_text_honorar{
+        position: relative;
+        height: auto;
+    }
+    .body_text_termine{
+        position: relative;
+        height: auto;
+    }
+    .body_text_veranstaltungen{
+        position: relative;
+        height: auto;
+    }
+    .body_text_contact{
+        position: relative;
+        height: auto;
+    }
+    .body_text_impressum{
+        position: relative;
+        height: auto;
+    
+    }
+    .body_text_datenshutz{
+        position: relative;
+        height: auto;
+    }
     body
     {
         background-color: lightblue;
@@ -769,14 +853,51 @@ body#Datenschutz_body{
         padding-bottom: 5px;
         text-align: left;
         background-color: rgba(0, 0, 0, 0.8);
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 30%;
+        margin-right: 30%;
         border-radius: 10px;
         
     }
 }
-@media (min-width:1201px) and (max-width:1600px)
+@media (min-width:1001px) and (max-width:1600px)
 {
+    .body_text_index{
+        position: relative;
+        height: auto;
+    }
+    .body_text_welcome{
+        position: relative;
+        height: auto;
+    }
+    .body_text_about{
+        position: relative;
+        height: auto;
+    }
+    .body_text_honorar{
+        position: relative;
+        height: auto;
+    }
+    .body_text_termine{
+        position: relative;
+        height: auto;
+    }
+    .body_text_veranstaltungen{
+        position: relative;
+        height: auto;
+    }
+    .body_text_contact{
+        position: relative;
+        height: auto;
+    }
+    .body_text_impressum{
+        position: relative;
+        height: auto;
+    
+    }
+    .body_text_datenshutz{
+        position: relative;
+        height: auto;
+    }
     body
     {
         background-color: lightblue;
@@ -801,8 +922,8 @@ body#Datenschutz_body{
         padding-bottom: 5px;
         text-align: left;
         background-color: rgba(0, 0, 0, 0.8);
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: 40%;
+        margin-right: 40%;
         border-radius: 10px;
         
     }
@@ -833,8 +954,8 @@ body#Datenschutz_body{
         padding-bottom: 5px;
         text-align: left;
         background-color: rgba(0, 0, 0, 0.8);
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 40%;
+        margin-right: 40%;
         border-radius: 10px;
         
     }
