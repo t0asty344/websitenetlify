@@ -41,32 +41,35 @@
         </div>
     </div>
 <section class="body_text_kalender">
+    <div class="kalender_month" id="kalender_month">
+        <b id="kalender_month_text">Januar</b>
+    </div>
     <div class="full_kalender">
-        <button class="kalender_button"></button>
+        <button class="kalender_button" onclick="beforemonth()"></button>
         <div class="kalender_div"id="kalender_div">
         </div>
-        <button class="kalender_button"></button>
+        <button class="kalender_button" onclick="nextmonth()"></button>
     </div>
     <script>
-        const weekdays = ["mon","dien","mit","donn","frei","sam","son"]
+        const weekdays = ["mo","di","mi","do","fr","sa","so"]
+        const months =["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
         const kalender= document.getElementById("kalender_div");
+        const kalender_month_text= document.getElementById("kalender_month_text");
         const today = new Date();
         const todays_day = today.getDate();
-        const month = today.getMonth();
-        const year = today.getFullYear();
+        var month = today.getMonth();
+        let year = today.getFullYear();
         var firstday;
         var lastday;
         function firstmonthday()
         {
-            
             firstday_date =new Date(year,month,0);
-            firstday=firstday_date.getDay() ;
+            firstday=firstday_date.getDay();
         }
         function lastmonthday()
         {
             lastday_date =new Date(year,month+1,0);
             lastday=lastday_date.getDate();
-            
         }
         function createdays()
             {
@@ -79,34 +82,66 @@
         }
         function createcalendar()
         {
-            for(let i =0; i<35;i++) {
-                
+            for(let i =0; i<42;i++) 
+            {
                 let item = document.createElement("div");
-                item.style.border = "1px solid black"
+                item.style.border = "1px solid black";
                 item.style.backgroundColor= "blue";
                 kalender.appendChild(item);
                 var weekday = document.createElement("p");
                 weekday.style.textAlign= "center";
                 item.appendChild(weekday);
-                var date_text= i-firstday +1
-                if(date_text>0 && date_text<=lastday){
+                var date_text= i-firstday +1;
+                kalender_month_text.innerHTML= months[month] +" "+year;
+                if(date_text>0 && date_text<=lastday)
+                {
                     weekday.innerHTML = date_text;
-                }   
+                }
             }
+        }
+        function removecalendar()
+        {            
+            var kalender1 =kalender.getElementsByTagName("div");
+            console.log(kalender1);
+            console.log(kalender1.length);
+            for(let i =0; i<42;i++) 
+            {
+                kalender1[0].remove();
+            }
+        }
+        function nextmonth()
+        {
+            removecalendar()
+            month+=1;
+            if(month>11)
+            {
+                month=0;
+                year +=1;
+            }
+            main()
+        }
+        function beforemonth()
+        {
+            removecalendar()
+            month-=1;
+            if(month<0)
+            {
+                month=11;
+                year-=1;
+            }
+            main()
         }
         function main()
         {
-            createdays();
             firstmonthday();
             lastmonthday();
             createcalendar();
         }
+        createdays();
         main();
         
-        
-;
     </script>
-</section>
+    </section>
     <section>
         <div class="footer_section">
             <div class="footer_copyright">
