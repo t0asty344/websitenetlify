@@ -45,10 +45,10 @@
         <b id="kalender_month_text">Januar</b>
     </div>
     <div class="full_kalender">
-        <button class="kalender_button" onclick="beforemonth()"></button>
+        <button class="kalender_button" onclick="beforemonth()">before</button>
         <div class="kalender_div"id="kalender_div">
         </div>
-        <button class="kalender_button" onclick="nextmonth()"></button>
+        <button class="kalender_button" onclick="nextmonth()">next</button>
     </div>
     <script>
         const weekdays = ["mo","di","mi","do","fr","sa","so"]
@@ -78,6 +78,10 @@
                 var weekday = document.createElement("p");
                 kalender.appendChild(weekday);
                 weekday.innerHTML = weekdays[i];
+                weekday.style.textAlign = "center";
+                weekday.style.margin = 0;
+               
+                
             }
         }
         function createcalendar()
@@ -85,8 +89,9 @@
             for(let i =0; i<42;i++) 
             {
                 let item = document.createElement("div");
-                item.style.border = "1px solid black";
-                item.style.backgroundColor= "blue";
+                item.style.border = "1.5px solid black";
+                
+                item.style.backgroundColor= "lightgreen";
                 kalender.appendChild(item);
                 var weekday = document.createElement("p");
                 weekday.style.textAlign= "center";
