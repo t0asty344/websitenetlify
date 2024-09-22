@@ -330,8 +330,8 @@ body#Datenschutz_body{
 
 }
 .bilder_Veranstaltungen{
-    width: 700px;
-    height: 700px;
+    width: 350px;
+    height: 750px;
 }
 .Veranstaltungen_div_email{
     display: flex;

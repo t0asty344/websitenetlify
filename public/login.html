@@ -17,6 +17,30 @@
             <input class="Termine_tf" id="nachname" required>
             <button id="sendEmailButton">senden</button>
         </div>
+        <script>
+            async function checkuser()
+            {
+                try{
+                    const username = document.getElementById('vorname').value;
+                    const Password = document.getElementById('nachname').value;
+                    // Send a request to the serverless function
+                    const response = await fetch('/api/database', {
+                        method: 'POST',
+                        headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ username,Password }) // Include recipient and message in the request body
+                    });
+                    if (response.ok) {
+                        alert('logged in');
+                    } else {
+                        alert('Failed to send email.');
+                    }
+                }
+                catch(error){
 
+                }
+            }
+        </script>
 </body>
 </html>
